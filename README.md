@@ -1,2 +1,2 @@
-# pvcc-coding-club form / flyer project
-PVCC Coding Club - form for managing member signups, sharing club materials, and hosting collaborative development projects.
+# pvcc-club form / flyer project
+PVCC Club - form for managing member signups, sharing club materials, and hosting collaborative development projects.
