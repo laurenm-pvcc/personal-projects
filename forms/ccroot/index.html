@@ -1,37 +1,31 @@
+<!-- index.html, PVCC Coding Club Contact Form, personal project, Lauren M. -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>PVCC Coding Club Signup</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="styles/css/style.css">
     </head>
     <body>
         <main class="form-container">
-        <h1>Join the PVCC Coding Club</h1>
-        <form id="signup-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="Name" required>
+            <h1>Join the PVCC Coding Club</h1>
+            <form id="signup-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" required>
+                <label for="interests">Coding Interests</label>
+                <textarea id="interests" name="Interests" rows="4"></textarea>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+    
+        </main>
 
-            <label for="interests">Coding Interests</label>
-            <textarea id="interests" name="Interests" rows="4"></textarea>
-
-            <button type="submit">Sign Up</button>
-        </form>
-    </main>
-
-     <script>
-        const scriptURL = "https://script.google.com/macros/s/AKfycby01NZl-XCujVZtvMFylgr3pOVFHqtZhagfbfdMVIJErn4Ly3EScVSumjRe76F3ptyyJg/exec"; 
-        const form = document.getElementById("signup-form");
-
-        form.addEventListener("submit", e => {
-        e.preventDefault();
-            fetch(scriptURL, { method: "POST", body: new FormData(form)})
-            .then(response => alert("Thanks for signing up!"))
-            .catch(error => alert("Error: " + error.message));
-            });
-     </script>
+        <!-- external js link -->
+        <script src="styles/js/form.js"></script>
+    
     </body>
 </html>
